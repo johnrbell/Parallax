@@ -1,0 +1,101 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald");
+
+
+
+/*SETUP*/
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body { 
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Oswald;
+  perspective: 1px;
+}
+
+
+
+
+
+
+/*SECTION PARTS SIZING*/
+h1 {
+  font-size: 250%
+}
+
+.header h1{
+  margin-top: -20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 150%;
+  color: #333;
+}
+.section {
+  position: relative;
+  padding: 20% 10%;
+  min-height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, .7), 0 -5px 1px rgba(0, 0, 0, .7);
+  background: 50% 50% / cover;  
+}
+
+
+
+/*SECTION DATA BOXES*/
+.text {
+  width: 50%;
+  padding: 10px 50px;
+  border-radius: 5px;
+  background: rgba(200,200,200, .7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+#section1 .text{
+  margin-left: auto;
+  margin-right: auto;
+}
+#section2 .text{
+  margin-left: 0;
+  margin-right: auto;
+}
+#section3 .text{
+  margin-left: auto;
+  margin-right: 0;
+}
+.header, .footer {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+
+
+/*SECTION IMAGES*/
+#title {
+  background-image: url("http://i.imgur.com/kLEnZ9o.jpg");
+  background-attachment: fixed;  
+}
+#section1{
+  background-image: url("http://i.imgur.com/k1hqL67.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+#section2 {
+  background-image: url("http://i.imgur.com/SYAARx7.jpg");
+  background-attachment: fixed;
+}
+#section3{
+  background-image: url("http://i.imgur.com/jo4HX13.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+#section4{
+  background: #111;
+}
